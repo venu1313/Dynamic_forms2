@@ -1,0 +1,40 @@
+﻿<div style="padding-left: 2px;"*ngIf="currentUser.role =='Manager'">
+    <aside style="width: auto;float: left;">
+        <div *ngFor='let menu of sales'>
+          <ul class="list-group">
+           <li class="list-group-item" *ngIf='menu.item1'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/Manger/:name/{{menu.item1}}/{{userFromApi.firstName}}">{{menu.item1}}</a></li> 
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div *ngIf="currentUser.role =='Supervisor'">
+        <aside style="width: auto;float: left;">
+            <div *ngFor='let menu of sales'>
+              <ul class="list-group">
+               <li class="list-group-item" *ngIf='menu.item2'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/Supervisor/:name/{{menu.item2}}/{{userFromApi.firstName}}">{{menu.item2}}</a></li> 
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div *ngIf="currentUser.role =='Operator'">
+            <aside style="width: auto;float: left;">
+                <div *ngFor='let menu of sales'>
+                  <ul class="list-group">
+                   <li class="list-group-item" *ngIf='menu.item3'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/Operator/:name/{{menu.item3}}/{{userFromApi.firstName}}">{{menu.item3}}</a></li> 
+                  </ul>
+                </div>
+              </aside>
+            </div>
+<div class="card mt-4">
+    <h4 class="card-header">Home</h4>
+    <div class="card-body">
+        <p>You're logged in with Angular 8 & JWT!!</p>
+        <p>Your role is: <strong>{{currentUser.role}}</strong>.</p>
+        <p>This page can be accessed by <u>all authenticated users</u>.</p>
+        <p class="mb-1">Current user from secure api end point:</p>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="userFromApi">
+            <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
+        </ul>
+    </div>
+</div>

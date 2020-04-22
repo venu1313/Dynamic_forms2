@@ -1,0 +1,32 @@
+
+<div class="mt-3">
+  <!-- {{Login()}} -->
+  <table class="table table-bordered" style="background-color: aqua;">
+    <pre>
+      <h4><i> Cloud Collab                                                                  {{role}} Manager       {{id}}       </i><button routerLink="">Logout</button>  </h4></pre>
+  </table>
+  
+
+<!--   
+          <aside>
+
+        <div >
+          <ul class="list-group" *ngFor='let menu of menus'>
+           
+            <li class="list-group-item" *ngIf='menu'><button type="button" class="btn btn-secondary btn-lg btn-block bg-light"><a  routerLink="/{{role}}:name/{{menu}}/{{name}}">{{menu}}</a></button></li> 
+          </ul>
+        </div>
+          </aside> -->
+
+          <aside id="s">
+            <div >
+              <ul class="list-group" *ngFor='let menu of sales'>
+               
+                <li class="list-group-item bg-light" *ngIf='menu.item1'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary"  routerLink="/Manger/:name/{{menu.item1}}/{{id}}">{{menu.item1}}</a></li> 
+              </ul>
+            </div>
+              </aside>
+
+          <router-outlet></router-outlet>
+      </div>
+     

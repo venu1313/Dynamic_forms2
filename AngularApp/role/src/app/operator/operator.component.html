@@ -1,0 +1,11 @@
+
+            <aside>
+              <div *ngFor='let menu of sales'>
+                <ul class="list-group">
+                 <li class="list-group-item" *ngIf='menu.item3'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/Operator/:name/{{menu.item3}}/{{username}}">{{menu.item3}}</a></li> 
+                </ul>
+              </div>
+            </aside>
+    
+ <router-outlet></router-outlet>
+  

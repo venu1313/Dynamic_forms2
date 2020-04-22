@@ -1,0 +1,22 @@
+
+<div style="width: 1500px;">
+ 
+          <pre style="margin-top: auto;"><h3 class="text-primary">                                     Department Details</h3></pre>
+          <table class="table table-bordered"  style="width: 800px;margin-left: 500px;">
+            <thead>
+             <tr> <th>DEPT ID</th>
+               <th>EMP ID</th>
+                <th>DEPT NAME</th>
+                <th>DEPT LOCATION</th>
+        
+                </tr></thead>
+                <tbody *ngFor='let data of sales'>
+                <tr *ngIf='data.id' >
+                    <td>{{data.id}}</td>
+                    <td>{{data.eid}}</td>
+                    <td>{{data.role}}</td>
+                    <td>{{data.city}}</td>
+                 </tr></tbody>
+         
+         
+          </table></div>

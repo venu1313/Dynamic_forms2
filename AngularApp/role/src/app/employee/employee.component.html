@@ -1,0 +1,21 @@
+
+<div style="background-color: lightblue;height: 88vh;">
+ 
+          <pre><h3 class="text-primary mt-3">                                      Employee Details</h3></pre>
+          <table class="table table-bordered "  style="width: 1000px;margin-left: 400px;background-color:hotpink;">
+            <thead>
+             <tr> <th>EMLOYEE ID</th>
+                <th>EMPLOYEE NAME</th>
+                <TH>EMPLOYEE DEPT</TH>
+                <TH>COMPANY</TH>
+                </tr></thead>
+                <tbody *ngFor='let data of sales' >
+                <tr *ngIf='data.id' >
+                    <td  >{{data.eid}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.role}}</td>
+                    <td>{{data.company}}</td>
+                 </tr></tbody>
+         
+          
+          </table></div>

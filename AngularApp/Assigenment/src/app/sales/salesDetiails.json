@@ -1,0 +1,23 @@
+[
+    {
+      "sId": "1",
+      "productName": "nokia",
+      "sPrice": "37600.00",
+      "sDate": "12/2/2020"
+      
+      },
+      {
+        "sId":" 1654",
+        "productName": "oppo",
+        "sPrice": "67625.00",
+        "sDate": "12/6/2019"
+        
+        },
+        {
+          "sId": "124",
+          "productName": "samsung",
+          "sPrice":"87738.00",
+          "sDate": "12/1/2020"
+          
+          }
+        ]

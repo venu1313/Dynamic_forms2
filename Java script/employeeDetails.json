@@ -1,0 +1,21 @@
+[
+    {
+        "eid":1,
+        "ename":"prudhvi raj",
+        "esalary":252525.2525,
+        "ecity":"Hyderabad"
+    },
+    
+    {
+        "eid":2,
+        "ename":"rajeev",
+        "esalary":252525.2525,
+        "ecity":"Bangalore"
+    },
+    {
+        "eid":3,
+        "ename":"ravi",
+        "esalary":252525.2525,
+        "ecity":"Goa"
+    }
+]

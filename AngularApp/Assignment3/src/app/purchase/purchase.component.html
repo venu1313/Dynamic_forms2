@@ -1,0 +1,26 @@
+<div style="width: 1500px;">
+          <pre style="margin: auto;"><h3 class="text-primary text-center">PURCHASE ORDER DETAILS
+           </h3></pre>
+           <table class="table table-bordered"  style="width: 800px;margin-left: 800px;" >
+        
+        <thead>
+          <tr><th>PRODUCT CODE</th>
+           <th>PRODUCT NAME</th>
+          <th>PRODUCT PRICE</th>
+          <th>PRODUCT DATA</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let menu of sales'>
+            <td *ngIf='menu.productId'>{{menu.productId}}</td>
+            <td *ngIf='menu.productName'>{{menu.productName}}</td>
+            <td *ngIf='menu.productPrice'>{{menu.productPrice}}</td>
+            <td *ngIf='menu.productDate'>{{menu.productDate}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+  
+ 
+ 
+  
+  </div>

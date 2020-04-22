@@ -1,0 +1,50 @@
+[
+    {
+      "productId": "1",
+      "productName": "dell loptop",
+      "productCode": "GDN-0011",
+    
+      "description": "Leaf rake with 48-inch wooden handle.",
+      
+      "price": "195658.95"
+     
+    },
+    {
+      "productId": "2",
+      "productName": "hp loptop",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2010",
+      "description": "15 gallon capacity rolling garden cart",
+      "cost": "20",
+      "price": "32665.99"
+    
+    },
+    {
+      "productId": "5",
+      "productName": "lenovo loptop",
+      "productCode": "TBX-0048",
+      "releaseDate": "May 21, 2013",
+      "description": "Curved claw steel hammer",
+      "price": "32554.99"
+    
+    },
+    {
+      "productId": "8",
+      "productName": "nokia",
+      "productCode": "TBX-0022",
+      "releaseDate": "May 15, 2009",
+      "description": "15-inch steel blade hand saw",
+      "price": "32454.99"
+    
+    },
+    {
+      "productId": "10",
+      "productName": "oppo",
+      "productCode": "GMG-0042",
+      "releaseDate": "October 15, 2002",
+      "description": "Standard two-button video game controller",
+      "cost": "2.22",
+      "price": "35457.95"
+  
+    }
+  ]

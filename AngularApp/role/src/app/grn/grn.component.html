@@ -1,0 +1,36 @@
+<div style="width: 1500px;">
+    <!-- <table class="table table-bordered" style="background-color: aqua;">
+       <pre> <h4><i>  Cloud Collab                                                                         {{username}} </i> <button><a href="login">Logout</a></button>  </h4></pre>
+    </table> -->
+       <!-- <table class="table table-bordered"  > -->
+            <!-- <aside>
+               <div *ngFor='let menu of sales'>
+                  <ul class="list-group">
+                   <li class="list-group-item" *ngIf='menu.item2'><a href="{{menu.item2}}/{{username}}">{{menu.item2}}</a></li> 
+                  </ul>
+                </div>
+            </aside> -->
+            <pre style="margin-top: 30px ;"><h3 class="text-primary text-center"> GOODS RECEIPT  DETAILS
+     </h3></pre>
+     <table class="table table-bordered"  style="width: 800px;margin-left: 500px; " >
+
+  <thead>
+    <tr><th>PRODUCT SER.NO</th>
+     <th>PRODUCT NAME</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let menu of sales'>
+      <td *ngIf='menu.iId'>{{menu.iId}}</td>
+      <td *ngIf='menu.iName'>{{menu.iName}}</td>
+    </tr>
+    <tr *ngFor='let menu of sales'>
+        <td *ngIf='menu.productId'>{{menu.productId}}</td>
+        <td *ngIf='menu.productName'>{{menu.productName}}</td>
+      </tr>
+  </tbody>
+
+</table>
+   
+  
+    
+    </div>

@@ -1,0 +1,45 @@
+[
+    {
+        "productId": "1656",
+        "productName": "nokia",
+        "productPrice": "37600.00",
+        "productDate": "12/2/2020"
+        
+        },
+        {
+          "productId":" 1654",
+          "productName": "oppo",
+          "productPrice": "67625.00",
+          "productDate": "12/6/2019"
+          
+          },
+          {
+            "productId": "124",
+            "productName": "samsung",
+            "productPrice":"87738.00",
+            "productDate": "12/1/2020"
+            
+            },
+            
+              {
+                "iId": "178",
+                "iName": "Dell loptop",
+                "iDate": "09/2/2020",
+                "icost":"54543.00"
+                
+                },
+                {
+                  "iId": "1654",
+                  "iName": "hp loptop",
+                  "iDate": "12/2/2020",
+                  "icost":"42645.00"
+                  
+                  },
+                  {
+                    "iId": "124",
+                    "iName": "lenovo loptop",
+                    "iDate": "23/1/2020",
+                    "icost":"23754.00"
+                    }
+          
+]

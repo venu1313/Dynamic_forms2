@@ -1,0 +1,26 @@
+[
+    {
+        "eid":1,
+        "ename":"raj",
+        "ecity":"Bangalore",
+        "email":"raj@gmail.com"
+    },
+    {
+        "eid":60,
+        "ename":"praveen",
+        "ecity":"Bangalore",
+        "email":"praveen@gmail.com"
+    },
+    {
+        "eid":60,
+        "ename":"prudhvi",
+        "ecity":"Bangalore",
+        "email":"prudhvi@gmail.com"
+    },
+    {
+        "eid":89,
+        "ename":"ravi",
+        "ecity":"Bangalore",
+        "email":"ravi@gmail.com"
+    }
+]

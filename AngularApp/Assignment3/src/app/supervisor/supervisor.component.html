@@ -1,0 +1,15 @@
+<div class="mt-3">
+   <table class="table table-bordered" style="background-color: aqua;">
+     <pre> <h4><i>  Cloud Collab                                                                       Supervisor        {{username}}   </i><button routerLink="">Logout</button>  </h4></pre>
+   </table>
+      
+            <aside>
+               <div *ngFor='let menu of sales'>
+                  <ul class="list-group">
+                   <li class="list-group-item" *ngIf='menu.item2'><a class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/Supervisor/:name/{{menu.item2}}/{{username}}">{{menu.item2}}</a></li> 
+                  </ul>
+                </div>
+            </aside>
+  
+    <router-outlet></router-outlet>
+    </div>

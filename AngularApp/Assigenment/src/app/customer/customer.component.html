@@ -1,0 +1,25 @@
+
+  <h1 class="text-info"> customer Details</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="bg-success">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of customer">
+          
+              <td>
+               {{product.customerId}}
+                </td>
+              
+          <td>{{product.customerName | uppercase}}</td>
+          <td>{{product.customerAddress}}</td>
+          <td>{{product.customerPhone}}</td>
+        </tr>
+      </tbody>
+    </table>
+  

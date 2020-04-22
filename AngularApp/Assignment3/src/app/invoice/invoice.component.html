@@ -1,0 +1,26 @@
+<div style="width: 1500px;">
+   
+            <pre style="margin: auto;"><h3 class="text-primary text-center">INVOCIE DETAILS
+            </h3></pre>
+            <table class="table table-bordered"  style="width: 800px;margin-left: 500px;" >
+         <thead>
+           <tr><th>PRODUCT ID</th>
+            <th>PRODUCT NAME</th>
+           <th>PRODUCT COST</th>
+           <th>PRODUCT DATA</th></tr>
+         </thead>
+         <tbody>
+           <tr *ngFor='let menu of sales'>
+             <td *ngIf='menu.iId'>{{menu.iId}}</td>
+             <td *ngIf='menu.iName'>{{menu.iName}}</td>
+             <td *ngIf='menu.icost'>{{menu.icost}}</td>
+             <td *ngIf='menu.iDate'>{{menu.iDate}}</td>
+           </tr>
+         </tbody>
+ 
+      
+    </table>
+   
+
+    
+    </div>

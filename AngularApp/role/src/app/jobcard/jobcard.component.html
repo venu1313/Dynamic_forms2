@@ -1,0 +1,25 @@
+<div style="width: 1500px; margin-top: 30px;">
+    
+            <pre><h3 class="text-primary">                                                                                     Job Card Details</h3></pre>
+            <table class="table table-bordered"  style="width: 800px;margin-left: 300px;">
+              <thead>
+               <tr> 
+                  <th>NAME</th>
+                  <TH>JOB NAME</TH>
+                  <th>START DATE</th>
+                  <TH>END DATE</TH>
+                  <TH>STATUS</TH>
+                  </tr></thead>
+                  <tbody *ngFor='let data1 of sales'>
+                  <tr *ngIf='data1.id'>
+
+                      <td>{{data1.name}}</td>
+                      <td>{{data1.role}}</td>
+                      <td>{{data1.sdate}}</td>
+                      <td>{{data1.edate}}</td>
+                      <td>{{data1.status}}</td>
+                   </tr></tbody>
+           
+           
+    </table>
+    </div>

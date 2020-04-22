@@ -1,0 +1,25 @@
+[
+    {
+      "customerId":" 1",
+      "customerName": "raju",
+      "customerAddress": "bangalore",
+      "customerPhone":" 78758973989"
+      
+      },
+      {
+        "customerId": "12",
+        "customerName": "venu",
+        "customerAddress": "tirupati",
+        "customerPhone": "78758973989"
+        
+        },
+        {
+          "customerId": "10",
+          "customerName": "gopal",
+          "customerAddress": "vizag",
+          "customerPhone":" 78758973989"
+          
+          }
+   
+  
+]

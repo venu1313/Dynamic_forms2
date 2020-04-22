@@ -1,0 +1,87 @@
+<mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon><b>Menu</b>
+           
+          </button>
+          <h1 class="text-center">Mangaer </h1>
+          <span class="menu-spacer"></span>
+          <div>
+            <!-- <a mat-button [routerLink]="'/accounts'"> Accounts </a> -->
+           
+            <span class="text-center"> {{id}} </span> 
+            <button mat-button routerLink=""> Logout </button>
+      
+          </div>
+        </mat-toolbar-row>
+
+    <mat-toolbar-row>
+        <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+      </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list *ngFor='let menu of sales'>
+  
+        <a mat-list-item routerLink="/Manger/:name/{{menu.item1}}/{{id}}">{{menu.item1}}</a>
+        <!-- <a mat-list-item [routerLink]="'/create-account'"> Create Account </a>
+        <a mat-list-item [routerLink]="'/contacts'"> Contacts </a>
+        <a mat-list-item [routerLink]="'/create-contact'"> Create Contact </a>
+        <a mat-list-item [routerLink]="'/activities'"> Activities </a>
+        <a mat-list-item [routerLink]="'/create-activity'"> Create Activity </a>
+        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+   -->
+    </mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content>
+  <div style="height: 88vh;">
+
+   <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<footer class="page-footer font-small blue fixed-bottom bg-primary">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" class="text-white"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+<!-- <div class="mt-3"> -->
+    <!-- {{Login()}} -->
+    <!-- <table class="table table-bordered" style="background-color: aqua;">
+      <pre>
+        <h4><i> Cloud Collab                                                                                                                                                  {{role}} Manager       {{id}}                              </i><button routerLink="">Logout</button>  </h4></pre>
+    </table>
+
+     -->
+  <!--   
+            <aside>
+  
+          <div >
+            <ul class="list-group" *ngFor='let menu of menus'>
+             
+              <li class="list-group-item" *ngIf='menu'><button type="button" class="btn btn-secondary btn-lg btn-block bg-light"><a  routerLink="/{{role}}:name/{{menu}}/{{name}}">{{menu}}</a></button></li> 
+            </ul>
+          </div>
+            </aside> -->
+  
+            <!-- <aside id="s">
+              <div >
+                <ul class="list-group" *ngFor='let menu of sales'>
+                 
+                  <li class="list-group-item bg-light" *ngIf='menu.item1'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary"  routerLink="/Manger/:name/{{menu.item1}}/{{id}}">{{menu.item1}}</a></li> 
+                </ul>
+              </div>
+                </aside> 
+   -->
+            <!-- <router-outlet></router-outlet> -->
+        <!-- </div>
+        --> 

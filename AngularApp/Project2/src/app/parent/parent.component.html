@@ -1,0 +1,22 @@
+<p>parent works!</p>
+<table border="5">
+    <tr>
+        <!-- <th>pid</th> -->
+        <th><button (click)="showimg()" >show img</button></th>
+        <th>id</th>
+        <th>price</th>
+        <th>pid</th>
+        <th>pname</th>
+    </tr>
+    <tr *ngFor='let pd of products'>
+        <td ><img [src]='pd.img' width="60" *ngIf="imgvar"/></td>
+        <td >{{pd.id}}</td>
+        <td >{{pd.price}}</td>
+        <td >{{pd.pid}}</td>
+        <td >{{pd.pname}}</td>
+
+
+
+
+    </tr>
+</table>

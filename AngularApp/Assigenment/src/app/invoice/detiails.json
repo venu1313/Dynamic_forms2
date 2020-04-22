@@ -1,0 +1,22 @@
+[
+    {
+      "iId": "1",
+      "iName": "Dell loptop",
+      "iDate": "09/2/2020",
+      "icost":"54543.00"
+      
+      },
+      {
+        "iId": "1654",
+        "iName": "hp loptop",
+        "iDate": "12/2/2020",
+        "icost":"42645.00"
+        
+        },
+        {
+          "iId": "124",
+          "iName": "lenovo loptop",
+          "iDate": "23/1/2020",
+          "icost":"23754.00"
+          }
+        ]

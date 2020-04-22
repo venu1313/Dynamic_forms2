@@ -1,0 +1,18 @@
+[
+    {
+      "path":"product",
+      "menuItem":"Product"
+    },
+    {
+      "path":"sales",
+      "menuItem":"Sales"
+    },
+    {
+      "path":"customer",
+      "menuItem":"Customer"
+    },
+    {
+      "path":"invoice",
+      "menuItem":"Invoice"
+    }
+  ]

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>Login</title>
+</head>
+<body onload="disable()" onchange="handleForm()">
+
+  <div class="container mt-3">
+ <form action="#"  method="POST" >
+    <div class="panel">
+      <div class="panel-heading bg-dark">
+        <h3 class="text-white">Login Form</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <label>Username</label>
+          <input id="username" oninput="handleForm1()" class="form-control"/>
+        </div>
+      </div>
+    <div>
+      <p id='error1' ></p>
+      <!---<dialog open>
+        <p id='error1' ></p>
+      </dialog> --->     
+      </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input id="password" type="password" class="form-control"/>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="Show" class="form-check-input" onclick="myFunction()" name="show" type="checkbox" value="showpassword"/>Show Password
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input id="cpassword" type="password" class="form-control"/>
+        </div>
+        
+        <div class="form-group">
+          <label>Mobile</label>
+          <input id="mobile" type="number" class="form-control" size="10" maxlength="10"/>
+        </div>
+
+        <div class="form-group">
+        <label>City</label>
+        <select  class="form-control" id="city">
+         <option value="">--Select Your City--</option>
+         <option value="Vijayawada">Vijayawada</option>  
+         <option value="Hyderabad">Hyderabad</option>  
+         <option value="Vizag">Vizag</option>  
+        </select>
+        </div>
+
+        
+        <label>Gender</label>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="gender" class="form-check-input" name="gender" type="radio" value="male"/>Male
+          </label>
+        </div>
+        <label class="form-check-label">
+        <div class="form-check">
+            <input id="gender" class="form-check-input" name="gender" type="radio" value="female"/>Female
+          </label>
+        </div>
+      
+
+        <label class="mt-2">Technical Skills</label>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="skill" class="form-check-input" name="skills" type="checkbox" value="Spring"/>Spring
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="skill" class="form-check-input" name="skills" type="checkbox" value="Hibernate"/>Hibernate
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="skill"  class="form-check-input" name="skills" type="checkbox" value="Web Services"/>Web Services
+          </label>
+        </div>
+
+      <div class="panel-footer">
+        <b id='error' style="color:red"></b>
+      </div>
+
+
+    <div>
+    <button id="Button"  onclick="disply()" class="btn btn-success mt-2">Login</button>
+  </div>
+  <div >
+    <table id='Button1' border="1">
+      <tr><td > </td></tr>
+      </table>
+  </div>
+  <div>
+    <p id="Button1"></p>
+  </div>
+</form>
+  <script src="Loign.js">
+
+  </script>  
+</body>
+</html>

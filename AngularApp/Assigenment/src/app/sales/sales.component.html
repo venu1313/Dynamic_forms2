@@ -1,0 +1,25 @@
+<div class="panel-body">
+  <h1 class="text-info"> sales  Details</h1>
+    <table class=" table table-bordered">
+      <thead>
+        <tr class="bg-success">
+          <th>Id</th>
+          <th>productName</th>
+          <th>Price</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of sales">
+          
+              <td>
+               {{product.sId}}
+                </td>
+              
+          <td>{{product.productName | uppercase}}</td>
+          <td>{{product.sPrice | currency:'INR'}}</td>
+          <td>{{product.sDate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

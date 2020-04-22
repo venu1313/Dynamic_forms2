@@ -1,0 +1,172 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!--Main Navigation-->
+<div class="card">
+  <div class="card-header">
+  <h3 class="text-center">  Hi Welcome </h3>
+  </div>
+  </div>
+<header class="bg-dark pink">
+
+  <nav class="navbar navbar-expand-lg navbar-dark default-color">
+    <a class="navbar-brand" href="#"><strong>Home</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Registration</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Opinions</a>
+        </li>
+      </ul>
+    
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+<!--Main Navigation-->
+
+<!-- <router-outlet></router-outlet>
+ -->
+ <aside>
+  <div class=""style="background-color:hotpink;height:1240px ;width: 300px;">
+    <table class="table table-bordered " style="background-color:hotpink;height:200px ;width: 300px;">
+      <tr> <td> <a routerLink="/#" > <h4 class="text-center mt-2 ">Profile</h4></a></td> </tr>
+      <tr> <td> <a routerLink="/#"> <h4 class="text-center mt-2">Events</h4></a></td> </tr>
+      <tr> <td> <a routerLink="/#"><h4 class="text-center mt-2">Action</h4></a></td> </tr>
+      <tr> <td> <a routerLink="/#"> <h4 class="text-center mt-2">Status</h4></a></td> </tr>
+      <tr> <td> <a routerLink="/#"> <h4 class="text-center mt-2">Overview</h4></a></td> </tr>
+
+    </table>
+    <!-- <ul class="list-group">
+      <li><a  class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/#"> facebook-f</a></li>
+      <li><a  class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/#">pinterest</a></li>
+      <li><a  class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/#">google-plus</a></li>
+      <li><a  class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/#">twitter</a></li>
+  
+    </ul> -->
+  </div>
+</aside>
+
+<body>
+<div class="container">
+  <form class="form-horizontal" role="form">
+      <h2>Registration</h2>
+      <div class="form-group">
+          <label for="firstName" class="col-sm-3 control-label "  >First Name</label>
+          <div class="col-sm-9">
+              <input type="text" id="firstName" placeholder="First Name" class="form-control is-invalid required" required autofocus >
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="lastName" class="col-sm-3 control-label" for="validationDefaultUsername">Last Name</label>
+          <div class="col-sm-9">
+              <input type="text" id="lastName" placeholder="Last Name" class="form-control" aria-describedby="inputGroupPrepend21" required autofocus>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="email" class="col-sm-3 control-label required">Email* </label>
+          <div class="col-sm-9">
+              <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+          </div>
+      </div>
+      <div class="form-group">
+          <label class="col-sm-3 control-label" for="validationDefault03">Password*</label>
+          <div class="col-sm-9">
+              <input type="password" id="validationDefault03" placeholder="Password" class="form-control" required>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+          <div class="col-sm-9">
+              <input type="password" id="password" placeholder="Password" class="form-control">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+          <div class="col-sm-9">
+              <input type="date" id="birthDate" class="form-control">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label>
+          <div class="col-sm-9">
+              <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+              <span class="help-block">Your phone number won't be disclosed anywhere </span>
+          </div>
+      </div>
+      <div class="form-group">
+              <label for="Height" class="col-sm-3 control-label">Height* </label>
+          <div class="col-sm-9">
+              <input type="number" id="height" placeholder="Please write your height in centimetres" class="form-control">
+          </div>
+      </div>
+       <div class="form-group">
+              <label for="weight" class="col-sm-3 control-label">Weight* </label>
+          <div class="col-sm-9">
+              <input type="number" id="weight" placeholder="Please write your weight in kilograms" class="form-control">
+          </div>
+      </div>
+      <div class="form-group">
+          <label class="control-label col-sm-3">Gender</label>
+          <div class="col-sm-6">
+              <div class="row">
+                  <div class="col-sm-4">
+                      <label class="radio-inline">
+                          <input type="radio" id="femaleRadio" value="Female">Female
+                      </label>
+                  </div>
+                  <div class="col-sm-4">
+                      <label class="radio-inline">
+                          <input type="radio" id="maleRadio" value="Male">Male
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div> <!-- /.form-group -->
+      <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+              <span class="help-block">*Required fields</span>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Register</button>
+  </form> <!-- /form -->
+</div> <!-- ./container -->
+
+
+</body>
+
+<footer class="page-footer font-small blue fixed-bottom bg-primary">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://www.cloudcollabtechnologies.com/" class="text-white"> Cloudcollabtechnologies.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+

@@ -1,0 +1,25 @@
+
+<table class="table table-bordered">
+<h1 class='text-primary bg-dark' align="center"> Cloud collab</h1>
+<nav class="navbar navbar-light bg-light">
+   <button class="btn btn-outline-success list-group-item" (click)='show()' > Menu</button>
+   <button class="btn btn-outline-success my-2 my-sm-0" > <a href="addmenu">AddMenuItem</a></button>
+   <button class="btn btn-outline-success" (click)="AddItem1()"><a href="#">Search</a></button> 
+</nav>
+  <aside>
+<table class="table table-hover" *ngIf="showMenuItem">
+<ul class="list-group">
+         <li class="list-group-item" *ngFor='let menu of menus'><a href="{{menu.path}}">{{menu.menuItem}}</a></li> 
+ 
+</ul>
+</table>
+</aside>
+<div *ngIf="showAddItem"> 
+  <label > Add Menu Item:</label>
+  <input type="text" [(ngModel)]="newTodoText">
+  <button class="btn btn-outline-success my-2 my-sm-0"  (click)="AddMenuItem()">Add</button>
+</div>
+<router-outlet></router-outlet>
+</table>
+
+

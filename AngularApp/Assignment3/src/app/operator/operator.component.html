@@ -1,0 +1,14 @@
+<div class="mt-3">
+  <table class="table table-bordered" style="background-color: aqua;">
+    <pre> <h4><i>  Cloud Collab                                                                               operator     {{username}}    </i><button routerLink="">Logout</button> </h4></pre>
+  </table>
+            <aside>
+              <div *ngFor='let menu of sales'>
+                <ul class="list-group">
+                 <li class="list-group-item" *ngIf='menu.item3'><a type="button" class="btn btn-secondary btn-lg btn-block bg-light text-primary" routerLink="/Operator/:name/{{menu.item3}}/{{username}}">{{menu.item3}}</a></li> 
+                </ul>
+              </div>
+            </aside>
+    
+ <router-outlet></router-outlet>
+    </div>

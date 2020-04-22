@@ -1,0 +1,25 @@
+<div class="panel-body">
+ <h1 class="text-info">  Invoice Details</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="bg-success">
+          <th>Id</th>
+          <th>productName</th>
+          <th>Date</th>
+          <th>TotalCost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of invoice">
+          
+              <td>
+               {{product.iId}}
+                </td>
+              
+          <td>{{product.iName | uppercase}}</td>
+          <td>{{product.iDate}}</td>
+          <td>{{product.icost | currency:'INR'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

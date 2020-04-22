@@ -1,0 +1,63 @@
+<table class="table table-bordered" > 
+  <tr> <td>
+<div style="width: 500px;">
+<table class="table table-bordered" >
+
+ <table class="table table-bordered">
+    <h2 class='text-drak' > Overview-Most Impartant KPIs </h2>
+    <p> Here you can find more imparatant kpis performance</p>
+  </table>
+  <h3>pie chart diagram</h3>
+    <canvas
+        baseChart
+        [chartType]="'pie'"
+        [datasets]="chartData"
+        [labels]="labels"
+     
+        [options]="chartOptions"
+        [legend]="true"
+        [colors]="colors"
+       >
+    </canvas>
+ 
+
+</table>
+
+</div>
+</td>
+<td>
+  <div style="width: 500px;">
+    <table class="table table-bordered" >
+    <h4 class='text-white bg-primary' > Rich Filter Data Bar Chart</h4>
+    <canvas
+        baseChart
+        [chartType]="'horizontalBar'"
+        [datasets]="chartData"
+        [labels]="labels"
+        [options]="chartOptions"
+        [legend]="true"
+        [colors]="colors"
+        >
+    </canvas>
+  </table> 
+  </div>      
+</td>
+<td>
+  <div style="width: 500px;">
+    <table class="table table-bordered" >
+    <h4 class='text-white bg-primary' > Rich Filter Data Bar Chart</h4>
+    <canvas
+        baseChart
+        [chartType]="'bar'"
+        [datasets]="chartData"
+        [labels]="labels"
+        [options]="chartOptions"
+        [legend]="true"
+        [colors]="colors">
+    
+    </canvas>
+  </table>
+  </div>  
+</td>
+</tr>
+</table>
